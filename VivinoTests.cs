@@ -7,7 +7,7 @@ namespace AppiumVivinoAppTests
 {
     public class VivinoTests
     {
-        private const string Url = "http://127.0.0.1:4723/wd/hub";
+        private const string UriString = "http://127.0.0.1:4723/wd/hub";
         private const string VivinoAppLocation = @"C:\vivino_8.18.11-8181203.apk";
         private AndroidDriver<AndroidElement> driver;
         private AppiumOptions options;
@@ -20,7 +20,7 @@ namespace AppiumVivinoAppTests
             options.AddAdditionalCapability("app", VivinoAppLocation);
             options.AddAdditionalCapability("appPackage", "vivino.web.app");
             options.AddAdditionalCapability("appActivity", "com.sphinx_solution.activities.SplashActivity");
-            this.driver = new AndroidDriver<AndroidElement>(new Uri(Url), options);
+            this.driver = new AndroidDriver<AndroidElement>(new Uri(UriString), options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
         }
 

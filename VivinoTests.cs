@@ -8,7 +8,7 @@ namespace AppiumVivinoAppTests
     public class VivinoTests
     {
         private const string UriString = "http://127.0.0.1:4723/wd/hub";
-        private const string VivinoAppLocation = @"C:\vivino_8.18.11-8181203.apk";
+        private const string VivinoAppLocation = @"C:\AppsDemo\vivino_8.18.11-8181203.apk";
         private AndroidDriver<AndroidElement> driver;
         private AppiumOptions options;
 

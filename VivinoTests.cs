@@ -125,7 +125,7 @@ namespace AppiumVivinoAppTests
         }
 
         [Test]
-        public void Test_Register_A_New_User()
+        public void Test_Register_A_New_User_Search_Wine()
         {
             var getStarted = driver.FindElementById("vivino.web.app:id/getstarted_layout");
             getStarted.Click();
